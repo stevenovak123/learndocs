@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const organizationName = 'stevenovak123';
-const projectName = 'LearnDocs';
+const projectName = 'learndocs';
 
 // /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -46,7 +46,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/stevenovak123/LearnDocs/tree/main',
+          editUrl: 'https://github.com/stevenovak123/learndocs/tree/main',
           routeBasePath: '/',
         },
         blog: false,
@@ -76,7 +76,7 @@ const config = {
             label: 'Tutorials',
           },
           {
-            href: 'https://github.com/stevenovak123/LearnDocs',
+            href: 'https://github.com/stevenovak123/learndocs',
             label: 'Repo',
             position: 'right',
           },
