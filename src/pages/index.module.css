@@ -9,7 +9,9 @@
   position: relative;
   overflow: hidden;
 }
-
+.heroText {
+  font-size: 2rem;
+}
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

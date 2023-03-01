@@ -11,7 +11,7 @@ const projectName = 'learndocs';
 const config = {
   title: 'Learn Docs',
   tagline: 'All my learnings in a single website',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/learndocs.ico',
 
   // Set the production url of your site here
   url: `https://${organizationName}.github.io`,
@@ -61,12 +61,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/learn-docs-logo.png',
       navbar: {
-        title: 'Steve Docs',
+        title: 'Learn Docs',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/learn-docs-logo.svg',
         },
         items: [
           {
