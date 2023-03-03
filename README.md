@@ -1,41 +1,36 @@
-# Website
+# [Learn Docs](https://stevenovak123.github.io/learndocs/)
+
+Learn docs is built with the intention to have notes and cheatsheets with easy access.
+These are all my **personal** learnings/ notes made by me for the topics. These are not a general notes for a topic.
+
+## Tech Stack
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+## Quickstart
 
-```
-$ yarn
-```
+You are free to contribute to the project.
 
-### Local Development
+1. Local Development
 
-```
-$ yarn start
-```
+Brief documentation is below.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Local development
 
-### Build
+This environment is fully on computer and requires each dependency to be installed and set up, but gives you the most flexibility for customisation.
 
-```
-$ yarn build
-```
+#### Prerequisites
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Before contributing or adding a new feature, please make sure you have already installed the following tools:
 
-### Deployment
+- [NodeJs](https://nodejs.org/en/download/) (Works with Node LTS version)
+- yarn - a package manager built by Facebook
 
-Using SSH:
+#### Commands
 
-```
-$ USE_SSH=true yarn deploy
-```
+You can set this up locally with the following steps:
 
-Not using SSH:
+1. `yarn install`
+1. `yarn start`
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+this will start the project on your local development server. Then make your changes and raise PR to the project.
