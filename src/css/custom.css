@@ -5,7 +5,7 @@
  
  */
 /* * These contain the whole websites colors */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #18453b;
@@ -17,6 +17,8 @@
   --ifm-color-primary-lightest: #1f5a4d;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -29,4 +31,6 @@
   --ifm-color-primary-lighter: #0fcc56;
   --ifm-color-primary-lightest: #11e662;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-code-font-size: 95%;
+  font-family: 'Inter', sans-serif;
 }
