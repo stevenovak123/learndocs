@@ -48,7 +48,7 @@ const birthYear = 2001;
 // used const as birthYear doesnt change
 
 // Global declaration
-openSource = "This project is open source";
+openSource = 'This project is open source';
 console.log(openSource); //output => This project is open source
 ```
 
@@ -97,8 +97,8 @@ These operators are used to assign a values. They follow right hand assignment i
 `+` can also be used to concatenate strings
 
 ```javascript
-let text = "What a wonderful ";
-text += "day it is";
+let text = 'What a wonderful ';
+text += 'day it is';
 
 console.log(text); // output => What a wonderful day it is
 ```
@@ -124,6 +124,33 @@ console.log(text); // output => What a wonderful day it is
 | &&       | logical AND |
 | \|\|     | logical OR  |
 | !        | logical NOT |
+
+- They can be use any data type, return any data type.
+- Often used for short-circuiting.
+
+  ```js title="Short-circuiting for || (OR)"
+  console.log(3 || 'Steve'); // output =>3
+  console.log('' || 'Steve'); //output => Steve
+  // Evaluates the first expression and returns it if true and ignores the second expression.
+  //Else returns second.
+  ```
+
+  ```js title="Short-circuiting for && (AND)"
+  console.log(0 && 'Steve'); //output =>0
+  console.log(7 && 'Steve'); //output => Steve
+  // Evaluates till first false value is found.
+  // Else continues till expression is true.
+  ```
+
+- The OR operator returns false when compared with 0 or `' '`.
+  - The Nullish Coalesing Operator overcomes this pitfall.
+  - It treats only null and undefined as false.
+  ```js
+  const restaurantGuests = 0;
+  const guests = restaurantGuests ?? 10;
+  console.log(guests); // output=>0
+  ```
+- Logical operators can be combined with assignment operators as well to assign values.
 
 ### Type Operators
 

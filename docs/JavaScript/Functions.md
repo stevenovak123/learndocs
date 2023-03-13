@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 
 Title: Functions in JS
 Description: Information on Functions in JavaScript

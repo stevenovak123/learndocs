@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 
 Title: Strings in JS
 Description: Information on Strings and Template Literals in JS
