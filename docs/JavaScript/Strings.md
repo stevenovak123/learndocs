@@ -33,6 +33,13 @@ let answer2 = "He is called 'Johnny'";
 let answer3 = 'He is called "Johnny"';
 ```
 
+String characters can be accessed like accessing an index of an array
+
+```js
+let airplane = "Airbus 380";
+console.log(airplane[2]); // output=> r
+```
+
 ## Template Literals
 
 Template is an easier way to write strings and insert variables in them. This came with ES6. They make use of back-tics (**` `` `**).
@@ -154,7 +161,7 @@ console.log(newText); // output=>"Please visit Deloitte office"
 
 ### replaceAll()
 
-Replaces all the strings to be repalced. Similar to `replace()`
+Replaces all the strings to be replaced. Similar to `replace()`
 
 ```javascript
 let text = "I love cats. Cats are very easy to love. Cats are very popular.";
@@ -172,3 +179,18 @@ let text = "Hello world";
 console.log(text.toUpperCase()); //output=> HELLO WORLD
 console.log(text.toLowerCase()); //output=> hello world
 ```
+
+### indexOf()
+
+Returns the index of the argument passed. Will return -1 if nothing is found.
+
+```js
+let airline = "TAP Air Portugal";
+console.log(name.indexOf("r")); // output=> 6
+console.log(name.lastIndexOf("r")); // output=> 10
+console.log(name.index("Portugal")); //output => 8
+```
+
+- It returns the first match of the index
+- It is case sensitive.
+- Can be used to find whole words.
