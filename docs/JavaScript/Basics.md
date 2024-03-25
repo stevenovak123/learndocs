@@ -56,12 +56,12 @@ console.log(openSource); //output => This project is open source
 
 There are many categories of operators:
 
-1. ** Arithmetic Operators**
-1. ** Assignment Operators **
-1. ** Comparison Operators**
-1. ** Logical Operators **
-1. ** Conditional Operators **
-1. ** Type Operators **
+1. **Arithmetic Operators**
+1. **Assignment Operators**
+1. **Comparison Operators**
+1. **Logical Operators**
+1. **Conditional Operators**
+1. **Type Operators**
 
 Their precendence can be found on the table present in [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table)
 
