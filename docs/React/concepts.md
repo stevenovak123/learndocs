@@ -21,7 +21,6 @@ JSX is a declrative syntax to describe what components look like and how they wo
 Example of how Components and JSX look
 
 ```jsx live
-import react from "react";
 
 function Clock(props) {
   const [date, setDate] = useState(new Date());
