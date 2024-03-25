@@ -112,9 +112,9 @@ console.log(text); // output => What a wonderful day it is
 | !=       | Not equal                         |
 | !==      | Not Equal value or not equal type |
 | >        | Greater than                      |
-| <        | Less than                         |
+| \<        | Less than                         |
 | >=       | Greater than or equal to          |
-| <=       | Less than or equal to             |
+| \<=       | Less than or equal to             |
 | ?        | Ternary operator (checks boolean) |
 
 ### Logical Operators
