@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 
-title: Introduction
+title: Introduction to React
 description: Introduction to React
 ---
 
@@ -15,5 +15,4 @@ React is a javascript library for building user interfaces. It is Component-base
 
 It is coded using JSX, a syntax that combines HTML, CSS, JavaScript as well as referencing other React components.
 
-
-It is a javascript library as it only contains the view layer. We need to add other packages/dependencies to complete a full-stack application. 
+It is a javascript library as it only contains the view layer. We need to add other packages/dependencies to complete a full-stack application.

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 
-title: Introduction
+title: Introduction to JS
 description: Introduction to JavaScript
 ---
 
