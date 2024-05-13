@@ -136,3 +136,38 @@ let person = { name: "Alice" };
 changeProperty(person);
 console.log(person.name); // Output: "Bob" (property of the object is changed)
 ```
+
+## First Class and Higher Order functions
+
+JavaScript treats functions as simple values as they are another "type" of objects.
+Hence we can store functions in variables or in properties. This is a **concept** that is available in different coding languages.
+Higher Order function is a function that recieves another function as an argument, that returns a new function or both. Returning function is also called a **callback**
+
+```js title="Functions as values"
+//Example:1
+const add=(a,b)=>a+b;
+//Example:2
+const counter ={
+    value:234,
+    increment: function(){
+        this.value ++1
+        }
+}
+```
+
+We can pass functions as arguments to other functions, return functions from functions and call methods on functions.
+
+```js title="Versatility of functions"
+const greet = () => {
+  console.log("Hello, How are you");
+  // Higher Order function
+  btn.addEventListener("click", greet); //greet is the function that will be called
+};
+//Function return another function
+function count() {
+  let counter = 0;
+  return function () {
+    counter++;
+  };
+}
+```
