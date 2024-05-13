@@ -2,8 +2,8 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const { themes } = require("prism-react-renderer");
-const lightTheme = themes.github;
-const darkTheme = themes.dracula;
+const lightTheme = themes.vsLight;
+const darkTheme = themes.vsDark;
 
 const organizationName = "stevenovak123";
 const projectName = "learndocs";
@@ -57,7 +57,7 @@ const config = {
       }),
     ],
   ],
-  plugins: ['@docusaurus/theme-live-codeblock'],
+  plugins: ["@docusaurus/theme-live-codeblock"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
