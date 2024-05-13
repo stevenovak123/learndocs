@@ -171,3 +171,20 @@ function count() {
   };
 }
 ```
+
+```js Title=" Callback functions/ Higher order functions"
+function manipulateString(str, logString) {
+  // Convert the string to uppercase
+  const upperCaseStr = str.toUpperCase();
+  // Call back with the manipulated string
+  logString(upperCaseStr);
+}
+
+// Callback function to log the manipulated string
+function logManipulatedString(manipulatedStr) {
+  console.log("Manipulated String:", manipulatedStr);
+}
+
+// Call the function with callback
+manipulateString("hello world", logManipulatedString); // Output: HELLO WORLD
+```
