@@ -172,7 +172,7 @@ function count() {
 }
 ```
 
-```js Title=" Callback functions/ Higher order functions"
+```js title="Callback functions/ Higher order functions"
 function manipulateString(str, logString) {
   // Convert the string to uppercase
   const upperCaseStr = str.toUpperCase();
@@ -187,4 +187,80 @@ function logManipulatedString(manipulatedStr) {
 
 // Call the function with callback
 manipulateString("hello world", logManipulatedString); // Output: HELLO WORLD
+```
+
+:::note
+Function returning a function is possible due to closures.
+:::
+
+```js title="Function returning another function"
+function greet(greeting) {
+  // The returned function takes a name and returns a greeting message
+  return function (name) {
+    return `${greeting}, ${name}!`;
+  };
+}
+
+// Usage of the function
+const greetHello = greet("Hello");
+console.log(greetHello("Alice")); // Output: Hello, Alice!
+console.log(greetHello("Bob")); // Output: Hello, Bob!
+
+const greetGoodbye = greet("Goodbye");
+console.log(greetGoodbye("Charlie")); // Output: Goodbye, Charlie!
+console.log(greetGoodbye("David")); // Output: Goodbye, David!
+```
+
+## Call, Apply and Bind methods
+
+The `call`, `apply`, and `bind` are methods in JavaScript used to manipulate the `this` context of functions and to invoke functions with a specific this value. They are often used in object-oriented programming and functional programming paradigms
+
+The `call()` method calls a function with a given this value and arguments provided individually.
+
+The `apply()` method is similar to `call()`, but it accepts arguments as an array.
+
+:::note
+The apply method is not often used in modern JS.  
+In Modern JS, it is written as `book.call(thisKeyword, ...Array)`
+:::
+
+The `bind()` method creates a new function that, when called, has its this value set to a specific value.
+
+```js title="Call, Apply, Bind method"
+const person = {
+  fullName: function (city, country) {
+    return this.firstName + " " + this.lastName + ", " + city + ", " + country;
+  },
+};
+
+const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+const person2 = {
+  firstName: "Jane",
+  lastName: "Doe",
+};
+
+// Using call
+const fullName1 = person.fullName.call(person1, "Oslo", "Norway");
+console.log(fullName1); // Output: John Doe, Oslo, Norway
+
+const fullName2 = person.fullName.call(person2, "Paris", "France");
+console.log(fullName2); // Output: Jane Doe, Paris, France
+
+// Using apply
+const fullName3 = person.fullName.apply(person1, ["Oslo", "Norway"]);
+console.log(fullName3); // Output: John Doe, Oslo, Norway
+
+const fullName4 = person.fullName.apply(person2, ["Paris", "France"]);
+console.log(fullName4); // Output: Jane Doe, Paris, France
+
+// Using bind
+const fullNameFunc1 = person.fullName.bind(person1);
+console.log(fullNameFunc1("Oslo", "Norway")); // Output: John Doe, Oslo, Norway
+
+const fullNameFunc2 = person.fullName.bind(person2);
+console.log(fullNameFunc2("Paris", "France")); // Output: Jane Doe, Paris, France
 ```
