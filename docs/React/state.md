@@ -19,21 +19,20 @@ Example of state
 function App() {
   const [data, setData] = useState(0);
   const handleIncrement = () => {
-    setData(prevCount=> prevCount+ 1);
+    setData((prevCount) => prevCount + 1);
   };
   const handleDecrement = () => {
-   setData(prevCount=> prevCount - 1);
+    setData((prevCount) => prevCount - 1);
   };
   return (
     <>
       <p>value of state: {data} </p>
-        <button onClick={handleIncrement}>Increment</button>
-        <button onClick={handleDecrement}>Decrement</button>
-    </button>
+      <button onClick={handleIncrement}>Increment</button>
+      <button onClick={handleDecrement}>Decrement</button>
+    </>
   );
 }
 ```
 
 We are using _setState_, like _setCount(prevCount => prevCount + 1)_, ensures that you're always working with the latest state, no matter when the update is actually applied by React.  
 While _setCount(count + 1)_ might work in simple cases, using _setCount(prevCount => prevCount + 1)_ is safer and more reliable, especially in more complex scenarios or in cases where you're dependent on the current state.
-
