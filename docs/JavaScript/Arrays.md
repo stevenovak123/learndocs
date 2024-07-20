@@ -71,7 +71,7 @@ There are multiple array methods. Often used are
   console.log(others); // output => 3,4,5,6
   ```
 
-## for-of loop
+## For-of loop
 
 - This is new way of looping over arrays.
 - It lets you loop over iterables.
@@ -83,3 +83,48 @@ for (const name of item) {
   console.log(name);
 } // ouput=> Steve Dsouza JavaScript
 ```
+
+## Array Methods
+  They are functions attached to Array objects. These are special built in functions that can be accessed. 
+
+  ### Array.slice()
+  We can extract the array without modifying the original array. We have to pass a start parameter, and optionally the end parameter. The end parameter is not included in the sliced array. Can use negative index to start from the end
+  ```js 
+  let arr=['s','t','e','v','e']
+  // elements from index to till the end
+  console.log(arr.slice(2))  // Output => ['e','v','e']
+  // start and end 
+  console.log(arr.slice(2,4)) // Output => ['e','v']
+ 
+  ```
+ ### Array.splice()
+  It is similar to slice but it mutates the original array. 
+  The syntax is splice(start, deleteCount, itemN)
+  ```js 
+  let arr=['s','t','e','v','e']
+  // elements from index to till the end
+  console.log(arr.splice(2))  // Output => ['e','v','e']
+  // start and end 
+  console.log(arr) // Output => [ 's', 't' ]
+  ```
+  ### Array.reverse()
+  It reverses the array. It mutates the original array.
+
+  ```js 
+  let arr=['s','t','e','v','e']
+  console.log(arr.reverse())  // Output => ['e','v','e','t,'s']
+  ```
+
+  ### Array.concat()
+  Concatenates two arrays together. does not mutate the original array.
+   ```js 
+  let arr=['s','t','e','v','e']
+  let arr2=['d','s','o','u','z','a']
+  console.log(arr.concat(arr2))  // Output => ['s','t','e','v','e','d','s','o','u','z','a']
+  ```
+  ### Array.join()
+  Joins the array together. Gives an output of string. 
+   ```js 
+  const elements = ['Fire', 'Air', 'Water'];
+  console.log(elements.join('-')); // Output => "Fire-Air-Water"
+  ```
