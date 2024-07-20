@@ -110,7 +110,7 @@ const catName = adventurer.cat?.name;
 console.log(catName); //output=> Dinah
 ```
 
-## Object Keys ,values, entries
+## Object Keys, values, entries
 
 - Used to get object properties and values.
 - Returns an array.
