@@ -264,3 +264,42 @@ console.log(fullNameFunc1("Oslo", "Norway")); // Output: John Doe, Oslo, Norway
 const fullNameFunc2 = person.fullName.bind(person2);
 console.log(fullNameFunc2("Paris", "France")); // Output: Jane Doe, Paris, France
 ```
+## Immediately Invoked Function Expressions (IIFE)
+
+Immediately Invoked Function Expressions (IIFE) are JavaScript functions that are executed immediately after they are defined. It is a **design pattern** typically used to create a local scope for variables to prevent them from overriding or polluting the global scope.
+
+```js title="IIFE"
+(function(){
+  console.log("Immediately invoked")
+})();
+(()=>{console.log("Immediately invoked")})();
+```
+
+## Closures
+
+It is a closed-over variable environment of the execution context in which a function was created, even after the execution context is gone. It gives a function access to all the variables of its parent function, even after the parent function has returned. The function keeps a reference of its outer scope, which preserves the scope chain throughout time.
+
+:::info
+Closures are not created manually, it happens automatically in certain situations and we need to identify it. 
+:::
+
+```js title="Closure"
+function createCounter() {
+  let count = 0;
+
+  return function() { 
+    count++; // The inner function has access to the outer function's variables
+    return count;
+  };
+}
+
+const counter = createCounter(); 
+
+console.log(counter()); // Output: 1
+console.log(counter()); // Output: 2
+console.log(counter()); // Output: 3
+
+const anotherCounter = createCounter(); // A new instance of the counter
+console.log(anotherCounter()); // Output: 1
+console.log(anotherCounter()); // Output: 2
+```
