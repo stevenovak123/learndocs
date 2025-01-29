@@ -128,3 +128,9 @@ for (const name of item) {
   const elements = ['Fire', 'Air', 'Water'];
   console.log(elements.join('-')); // Output => "Fire-Air-Water"
   ```
+  ### Array.at()
+  Extracts the value at the given index
+   ```js 
+  const elements = [1,2,3];
+  console.log(elements.at(1)); // Output => "2"
+  ```
