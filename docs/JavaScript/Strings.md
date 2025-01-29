@@ -194,3 +194,10 @@ console.log(name.index("Portugal")); //output => 8
 - It returns the first match of the index
 - It is case sensitive.
 - Can be used to find whole words.
+
+### at()
+Returns the value at the argument passed.
+```js
+let airline = "TAP Air Portugal";
+console.log(airline.at(0)) // output =>T
+````
