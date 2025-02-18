@@ -149,3 +149,15 @@ items.forEach(function(item, idx, arr){
   const elements = [1,2,3];
   console.log(elements.at(1)); // Output => "2"
   ```
+### Array.map()
+- Similar to forEach. Has a callback.
+- Difference is that it will create a new array of the result of the callback.
+- Extremely useful, as it will create a new array with our desired options.
+
+```js
+const array = [1, 4, 9, 16];
+const map1 = array.map(function(x){ return  x * 2});
+
+//output: Array [2, 8, 18, 32]
+```
+
