@@ -84,6 +84,21 @@ for (const name of item) {
 } // ouput=> Steve Dsouza JavaScript
 ```
 
+## ForEach loop
+- Requires a callback function. (Higher-Order function)
+- During each loop, it will execute the callback function .
+- Individual item is present in each iteration.
+- Can access index just by adding another variable.
+- **Will always loop over the entire array.**
+- Syntax is _elementName.forEach( currentElement, index, array )_
+
+```javascript
+const items =['Steve','Dsouza','JavaScript'];
+items.forEach(function(item, idx, arr){
+  console.log(item);
+}) // ouput=> Steve Dsouza JavaScript
+
+```
 ## Array Methods
   They are functions attached to Array objects. These are special built in functions that can be accessed. 
 
@@ -134,3 +149,15 @@ for (const name of item) {
   const elements = [1,2,3];
   console.log(elements.at(1)); // Output => "2"
   ```
+### Array.map()
+- Similar to forEach. Has a callback.
+- Difference is that it will create a new array of the result of the callback.
+- Extremely useful, as it will create a new array with our desired options.
+
+```js
+const array = [1, 4, 9, 16];
+const map1 = array.map(function(x){ return  x * 2});
+
+//output: Array [2, 8, 18, 32]
+```
+
