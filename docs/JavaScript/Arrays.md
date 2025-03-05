@@ -161,3 +161,46 @@ const map1 = array.map(function(x){ return  x * 2});
 //output: Array [2, 8, 18, 32]
 ```
 
+### Array.filter()
+Used to pick element/s that match a condition.
+
+```js
+const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+const result = words.filter((word) => word.length > 6);
+
+console.log(result);
+// output: Array ["exuberant", "destruction", "present"]
+```
+
+### Array.reduce()
+
+Used to reduce all the elements of an array to a single value.
+
+```js
+const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue,
+);
+
+console.log(sumWithInitial);
+// output: 10
+```
+
+### Array.find()
+retrieves the first occuring element of the array that matches the condition specified.
+
+
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find((element) => element > 10);
+
+console.log(found);
+// output: 12
+
+```
