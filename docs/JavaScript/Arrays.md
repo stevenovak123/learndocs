@@ -192,7 +192,7 @@ console.log(sumWithInitial);
 ```
 
 ### Array.find()
-retrieves the first occuring element of the array that matches the condition specified.
+Retrieves the first occuring element of the array that matches the condition specified.
 
 
 ```js
@@ -203,4 +203,31 @@ const found = array1.find((element) => element > 10);
 console.log(found);
 // output: 12
 
+```
+
+### Array.findIndex()
+ Returns the index of the found element. 
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 13;
+
+console.log(array1.findIndex(isLargeNumber));
+// output: 3
+
+```
+
+### Arrays.findLast() & Arrays.findLastIndex()
+Returns the last occuring element or last occuring index of the array that satisfies the provided testing function.
+
+
+```js
+const array1 = [5, 12, 50, 130, 44];
+
+const found = array1.findLast((element) => element > 45);
+const isLargeNumber = (element) => element > 45;
+console.log(found);
+// output: 130
+console.log(array1.findLastIndex(isLargeNumber))
+// Output: 3
 ```
