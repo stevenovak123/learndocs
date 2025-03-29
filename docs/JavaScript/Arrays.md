@@ -231,3 +231,20 @@ console.log(found);
 console.log(array1.findLastIndex(isLargeNumber))
 // Output: 3
 ```
+
+### Arrays.flat() & Arrays.flatMap()
+Helps create new array with all sub-arrays into a specified depth (can be passed as a param)
+The flatMap() method in JavaScript is used to map each element of an array using a mapping function, then flatten the result into a new array
+```js
+const arr1 = [0, 1, 2, [3, 4]];
+
+console.log(arr1.flat());
+// expected output: Array [0, 1, 2, 3, 4]
+const arr2 = [[[1, 2],3],[4,[5,6]],7,8];
+
+const arr2 = [1, 2, 3, 4];
+const result = arr2.flatMap(x => [x, x * 2]);
+console.log(result); // Output: [1, 2, 2, 4, 3, 6, 4, 8]
+
+
+```
