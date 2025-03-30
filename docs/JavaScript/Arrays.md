@@ -246,5 +246,17 @@ const arr2 = [1, 2, 3, 4];
 const result = arr2.flatMap(x => [x, x * 2]);
 console.log(result); // Output: [1, 2, 2, 4, 3, 6, 4, 8]
 
+```
+### Array.sort()
+It is based on strings. Sorts array alphabetically. **Mutates the original array**.
+For numbers, pass a callback function to ensure that it is sorted correctly.
 
+```js
+const names = ['Steve','Adam','Martha'];
+const sortedNames=names.sort()
+console.log(sortedNames) // Output : ['Adam', 'Martha','Steve']
+
+const numbers= [-20, 130, 90,40]
+const sortedNumbers = numbers.sort((a,b)=> a-b);
+console.log(sortedNumbers) // Output: [-20,40,90,130]
 ```
