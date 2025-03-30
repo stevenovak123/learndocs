@@ -128,3 +128,18 @@ console.log(Object.entries(object1));
 // output => [ [ 'a', 'somestring' ], [ 'b', 42 ], [ 'c', false ] ]
 // Entries returns it as a key value pair
 ```
+
+## Object Grouping
+It is a newer feature of JavaScript. Can be used to used to group elements together. The condition of the grouping is given in the callback function. 
+Can create the custom groups inside the callback function.
+
+```js
+const books = [
+  { title: 'The Catcher in the Rye', genre: 'Fiction' },
+  { title: 'Sapiens', genre: 'Non-Fiction' },
+];
+
+const group = Object.groupBy(books, (book) => book.genre);
+
+console.log(group); //Output: {Fiction: Array(1), Non-Fiction: Array(1)}
+```
