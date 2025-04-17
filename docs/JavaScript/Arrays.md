@@ -161,3 +161,102 @@ const map1 = array.map(function(x){ return  x * 2});
 //output: Array [2, 8, 18, 32]
 ```
 
+### Array.filter()
+Used to pick element/s that match a condition.
+
+```js
+const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+const result = words.filter((word) => word.length > 6);
+
+console.log(result);
+// output: Array ["exuberant", "destruction", "present"]
+```
+
+### Array.reduce()
+
+Used to reduce all the elements of an array to a single value.
+
+```js
+const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue,
+);
+
+console.log(sumWithInitial);
+// output: 10
+```
+
+### Array.find()
+Retrieves the first occuring element of the array that matches the condition specified.
+
+
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find((element) => element > 10);
+
+console.log(found);
+// output: 12
+
+```
+
+### Array.findIndex()
+ Returns the index of the found element. 
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 13;
+
+console.log(array1.findIndex(isLargeNumber));
+// output: 3
+
+```
+
+### Arrays.findLast() & Arrays.findLastIndex()
+Returns the last occuring element or last occuring index of the array that satisfies the provided testing function.
+
+
+```js
+const array1 = [5, 12, 50, 130, 44];
+
+const found = array1.findLast((element) => element > 45);
+const isLargeNumber = (element) => element > 45;
+console.log(found);
+// output: 130
+console.log(array1.findLastIndex(isLargeNumber))
+// Output: 3
+```
+
+### Arrays.flat() & Arrays.flatMap()
+Helps create new array with all sub-arrays into a specified depth (can be passed as a param)
+The flatMap() method in JavaScript is used to map each element of an array using a mapping function, then flatten the result into a new array
+```js
+const arr1 = [0, 1, 2, [3, 4]];
+
+console.log(arr1.flat());
+// expected output: Array [0, 1, 2, 3, 4]
+const arr2 = [[[1, 2],3],[4,[5,6]],7,8];
+
+const arr2 = [1, 2, 3, 4];
+const result = arr2.flatMap(x => [x, x * 2]);
+console.log(result); // Output: [1, 2, 2, 4, 3, 6, 4, 8]
+
+```
+### Array.sort()
+It is based on strings. Sorts array alphabetically. **Mutates the original array**.
+For numbers, pass a callback function to ensure that it is sorted correctly.
+
+```js
+const names = ['Steve','Adam','Martha'];
+const sortedNames=names.sort()
+console.log(sortedNames) // Output : ['Adam', 'Martha','Steve']
+
+const numbers= [-20, 130, 90,40]
+const sortedNumbers = numbers.sort((a,b)=> a-b);
+console.log(sortedNumbers) // Output: [-20,40,90,130]
+```
