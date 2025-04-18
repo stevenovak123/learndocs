@@ -118,3 +118,12 @@ Returns a random number between 0 (inclusive), and 1 (exclusive)
 ```js
 console.log(Math.random()); // Output --> 0.6498898044650971
 ```
+## Dates
+There are multiple ways to create dates. All require a constructor. 
+
+```js 
+const now=new Date();
+console.log(now) //Outputs date 
+console.log(new Date('April 18 2020 12:02:31'))
+console.log(new Date('April 11, 2024'))
+```
