@@ -27,6 +27,11 @@ We can parse numbers as well using the parseInt method. It will try to ignore ev
 ```js
 console.log(Number.parseInt('40px')); // 40
 ```
+## Big Int
+Big Int is a way of storing numbers greater than its MAX_SAFE_INTEGER.
+All the usual operators work the same. Math functions will not work correct.
+It is not possible to mix big ints with other types. Ideally the other numbers should be converted to Big Int.
+Comparison and Equality will work without conversions. 
 
 ## Math Object
 
