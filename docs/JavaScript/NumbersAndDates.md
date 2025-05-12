@@ -119,11 +119,44 @@ Returns a random number between 0 (inclusive), and 1 (exclusive)
 console.log(Math.random()); // Output --> 0.6498898044650971
 ```
 ## Dates
-There are multiple ways to create dates. All require a constructor. 
+There are multiple ways to create dates. All require a constructor. Months are 0 based like arrays. hence 1 is Feb and so on.
+Dates can also auto correct themselves if entered incorrectly.
 
 ```js 
 const now=new Date();
 console.log(now) //Outputs date 
 console.log(new Date('April 18 2020 12:02:31'))
 console.log(new Date('April 11, 2024'))
+console.log(new Date(2025,1,08,08,02,22)) // Output --> Sat 2025 Feb 08, 08:02:22
+```
+
+## Date Methods
+
+### getFullYear();
+Returns year of the date.
+
+```javascript
+const future = new Date(2027,10,19,15,23)
+console.log(future.getFullYear()) //Output --> 2027
+```
+### getMonth()
+Returns month of the date. 0 based.
+
+```javascript
+const future = new Date(2027,10,19,15,23)
+console.log(future.getMonth()) //Output --> 10
+```
+### getDate()
+Returns day of the date. Day of the month is returned
+
+```javascript
+const future = new Date(2027,10,19,15,23)
+console.log(future.getDate()) //Output --> 19
+```
+### getDay()
+Returns day of the week.
+
+```javascript
+const future = new Date(2027,10,19,15,23)
+console.log(future.getDay()) //Output --> 5
 ```
