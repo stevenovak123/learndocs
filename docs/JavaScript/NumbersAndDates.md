@@ -160,3 +160,6 @@ Returns day of the week.
 const future = new Date(2027,10,19,15,23)
 console.log(future.getDay()) //Output --> 5
 ```
+Similarly there are `getHours()`, `getMinutes()`, `getSeconds()`.
+
+Every `get` method also has a `set` method.
