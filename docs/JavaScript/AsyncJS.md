@@ -46,7 +46,7 @@ Promises are time sensitive and have multiple stages. We can handle all the diff
 
 ### Handling Promises
 
-```JS Title="Handling Promises (Fulfilled)"
+```JS title="Handling Promises (Fulfilled)"
 const data= function(param){
     fetch("API_URL").then(function(response){
         return response.json(); // this also results in an promise hence a then has to be appended
@@ -57,7 +57,7 @@ const data= function(param){
 
 ```
 
-```JS Title="Handling Promises (Rejected)"
+```JS title="Handling Promises (Rejected)"
 const data= function(param){
     fetch("API_URL").then(function(response){
         return response.json();
@@ -68,7 +68,7 @@ const data= function(param){
 
 ```
 
-```js Title="Building Promises"
+```js title="Building Promises"
 function checkNumberAsync(num) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
