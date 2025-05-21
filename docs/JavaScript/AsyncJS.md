@@ -14,7 +14,7 @@ Often used to make AJAX calls.
 AJAX stands for Asynchronous JavaScript and XML.
 It allows to communicate with remote web servers in an asynchronous way.
 
-## Handling AJAX. (OLD way)
+## Handling AJAX (OLD way)
 
 ```js title='AJAX the old way'
 const request = new XMLHttpRequest();
@@ -31,7 +31,7 @@ request.addEventListener('load', function () {
 
 This data would be posted into the html content.
 
-## Promises.
+## Promises
 
 Promises are an object used as a placeholder for the future result of an asynchronous operation. It used to contain future values (avoid callback nesting/loop). This is an ES6 feature.
 
@@ -96,7 +96,7 @@ async function runChecks() {
 runChecks();
 ```
 
-### Promise Combinators.
+### Promise Combinators
 
 Promises can be executed in parallel. This is used when Async code/ network call codes are not interdependent on each other.
 
