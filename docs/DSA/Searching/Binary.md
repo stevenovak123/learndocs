@@ -9,12 +9,12 @@ Binary search is a much faster form of search. Rather than eliminating one eleme
 
 ## Psuedocode.
 - Accept an array and the item to search.
-- initialize start (0) and end as (array.length-1). Can be called left and right as well
-- While the start is less than end AND middle is not the item. 
-    - Find the midpoint of the array. Can use this formula. (start + (end-start))/2
-    - Check if the item is before or after the midpoint.
-    - If item is before midpoint, then update end to midpoint -1. 
-    - else if item is after midpoint, update start to midpoint +1.
+- initialize `start` (0) and `end` as `(array.length-1)`. Can be called left and right as well
+- While the `start is less than end AND middle is not the item.` 
+    - Find the` midpoint` of the array. Can use this formula. `(start + (end-start))/2`
+    - Check if the` item is before or after` the midpoint.
+    - If `item is before midpoint`, then update `end to midpoint -1.` 
+    - else if `item is after midpoint`, update `start to midpoint +1`.
     - return middle if value is found.
     - If value is not find return -1.
 
