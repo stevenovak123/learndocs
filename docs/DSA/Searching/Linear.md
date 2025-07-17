@@ -8,7 +8,7 @@ description: Linear Search, logic and code
 Linear search is a simple search, where we visit each element in the array. Once the element is found, then return it. Can be done either from the start or the end.
 
 
-## Psuedocode.
+## Pseudocode.
 - Accept an array and a value.
 - Loop through the array and check if the current array element is equal to the value
 - If it is equal to value, return the index at which element is found.

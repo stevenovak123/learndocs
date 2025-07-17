@@ -7,7 +7,7 @@ description: Bubble Sort Logic and Code.
 It is a sorting algorithm where the largest values bubble up to the top.
 
 
-## Psuedocode.
+## Pseudocode.
 - Create a variable noSwap to check if any swaps are made during the pass.
 - Start a loop with a variable i from the end of the array towards the beginning (i.e., starting from the last element).
 - Set `noSwap = true` before each pass. This flag helps determine if any swaps are made during that pass.
