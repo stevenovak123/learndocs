@@ -19,7 +19,7 @@ It is a sorting algorithm where the largest values bubble up to the top.
 
 ## Time Complexity.
 - Best Case is O(N). 
-- Average Case and Worst Case is O(N^2), where N is the size of the array
+- Average Case and Worst Case is O(n<sup>2</sup>), where n is the size of the array
 
 
 ```javascript title='Bubble Sort'

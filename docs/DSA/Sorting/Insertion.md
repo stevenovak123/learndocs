@@ -21,7 +21,7 @@ Builds up the sort by gradually creating a larger left portion which is always s
 
 ## Time Complexity
 - Best Case is O(n).
-- Average and Worst Case is O(n^2)
+- Average and Worst Case is O(n<sup>2</sup>)
 
 ```js title='Insertion Sort'
 function insertionSort(arr) {
