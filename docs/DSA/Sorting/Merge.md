@@ -16,7 +16,7 @@ Combination of merging and sorting. Works by decomposing array into smaller arra
 
 
 ## Time Complexity.
-- Best ,Average and Worst Case is O(n log n).
+- Best, Average and Worst Case is O(n log n).
 
 ```js title='Merge Sort'
 // helper function
