@@ -18,7 +18,7 @@ Find the smallest value in the entire array and then place the smallest value fi
 - Return the sorted array
 
 ## Time Complexity.
-- Best, Average and Worst Case  is O(N^2), where N is the size of the array. 
+- Best, Average and Worst Case  is O(N<sup>2</sup>), where N is the size of the array. 
 - 
 
 
