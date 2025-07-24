@@ -54,3 +54,49 @@ class Node {
 }
 ```
 
+## Queue
+
+Follows a FIFO structure. First in First Out.
+First Element added to the stack is the first element to be removed.
+
+- Arrays can be used as a stack. provided FIFO is followed.
+- Linked lists can be used for queues as only the order matters and other information like index etc that array provides are not needed.
+
+```js title='Queue implementation'
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+class Queue {
+  constructor() {
+    this.first = null;
+    this.last = null;
+    this.size = 0;
+  }
+  // add to the end
+  enqueue(val) {
+    let newNode = new Node(val);
+    if (!this.first) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    }
+    return ++this.size;
+  }
+  // remove the first item
+  dequeue() {
+    if (!this.first) return null;
+    let temp = this.first;
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    this.first = this.first.next;
+    this.size--;
+    return temp.value;
+  }
+}
+```
