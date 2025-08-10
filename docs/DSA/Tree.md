@@ -65,7 +65,7 @@ DFS is vertically going down and searching.
 
 ### Psuedocode PostOrder DFS.
 
-- Create a variable to store teh values of the node visited.
+- Create a variable to store the values of the node visited.
 - Store the root of the tree in a variable called current.
 - Write a helper function which accepts a node.
   - If the node has a left property, call the helper function with the left property on the node.
@@ -76,7 +76,7 @@ DFS is vertically going down and searching.
 
 ### Psuedocode InOrder DFS.
 
-- Create a variable to store teh values of the node visited.
+- Create a variable to store the values of the node visited.
 - Store the root of the tree in a variable called current.
 - Write a helper function which accepts a node.
   - If the node has a left property, call the helper function with the left property on the node.
