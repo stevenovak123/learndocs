@@ -29,7 +29,7 @@ These are independent of type of trees and can be applied across. There are two 
 - BFS.
 - DFS.
 
-### Breadth First Search (BFS).
+### Breadth First Search (BFS)
 
 BFS is searching across the tree on each level.
 
