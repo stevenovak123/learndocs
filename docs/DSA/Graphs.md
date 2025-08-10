@@ -44,11 +44,46 @@ An adjacency list is a common way to represent graphs. In this structure:
 V is the number of vertices and E is the Edges of the graph
 :::
 
+
+## Graph Traversal
+
+Graph traversal is the process of visiting all the nodes (or vertices) in a graph, typically to search or explore the structure. The two main types of graph traversal are **Depth-First Search (DFS) and Breadth-First Search (BFS).**
+
+In DFS, you start from a node and explore as far as possible along each branch before backtracking.
+In BFS, you explore all the neighbors of a node before moving on to their neighbors.
+
+### Pseudocode Depth First Traversal
+There is a recursive and an iterative solution. both will give a different order.
+
+- The function should take a starting node.
+- Create a list to store the end result.
+- Create an object to store visited vertices.
+- Create a helper function which accepts a vertex
+  - This helper function should return early if the vertex is empty.
+  - The helper function should place the vertex it accepts into the visited object and push that vertex into the result array.
+  - Loop over all of the values in the adjacency list for that vertex.
+  - If any of those values are not listed/visited, recursively invoke the helper function with that vertex.
+
+### Pseudocode Breadth First Traversal
+
+- The function should take a starting node.
+- Create a queue and place the starting vertex in it.
+- Create an array to store the nodes visited.
+- Create an object to store visited vertices.
+- Mark the starting vertex as visited.
+- Loop as long as there is anything in the queue.
+- Remove the first vertex from the queue and push it into the array that stores the nodes visited.
+- Loop over each vertex in the adjacency list for the vertex you are visiting.
+- If it is not inside the object that stores nodes visited, mark it as visited and enqueue that vertex.
+- Return the array of visited nodes.
+
+
+
+
 ## Implementation
 
 Below implementation with undirected graphs.
-
-```js title='Graph with Adjacency list'
+```js title='Graph implementation'
 // * Undirected
 // * not doing error handling
 class Graph {
@@ -76,6 +111,62 @@ class Graph {
       this.removeEdge(vertex, adjacentVertex);
     }
     delete this.adjacencyList[vertex];
+  }
+  // recursive
+  depthFirstTraversal(start) {
+    const result = [];
+    const visited = {};
+    const adjacencyList = this.adjacencyList;
+    //IIFE. Can do without IIFE as well
+    (function dfs(vertex) {
+      if (!vertex) return null;
+      visited[vertex] = true;
+      result.push(vertex);
+      adjacencyList[vertex].forEach((neighbor) => {
+        if (!visited[neighbor]) {
+          return dfs(neighbor);
+        }
+      });
+    })(start);
+    return result;
+  }
+  // Iterative.
+  dfsIterative(start) {
+    let stack = [start];
+    let visited = {};
+    let currentVertex;
+    let result = [];
+    visited[start] = true;
+    while (stack.length) {
+      currentVertex = stack.pop();
+      result.push(currentVertex);
+      this.adjacencyList[currentVertex].forEach((neighbor) => {
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          stack.push(neighbor);
+        }
+      });
+    }
+    return result;
+  }
+  breadthFirst(start) {
+    const queue = [start];
+    const result = [];
+    const visited = {};
+    let currentVertex;
+    visited[start] = true;
+
+    while (queue.length) {
+      currentVertex = queue.shift();
+      result.push(currentVertex);
+      this.adjacencyList(currentVertex).forEach((neighbor) => {
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          queue.push(neighbor);
+        }
+      });
+    }
+    return result;
   }
 }
 ```
