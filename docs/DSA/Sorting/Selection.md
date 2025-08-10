@@ -7,7 +7,7 @@ description: Selection Sort Logic and Code.
 
 Find the smallest value in the entire array and then place the smallest value first into its sorted position. 
 
-## Pseudocode.
+## Pseudocode
 - Loop through the array from index 0 to the second-last index:
     - Set `lowest` to the current index `i`
     - Loop through the remaining elements (from `j=i+1` to the last index):
@@ -17,7 +17,7 @@ Find the smallest value in the entire array and then place the smallest value fi
         - Swap the element at `i` with the element at `lowest`
 - Return the sorted array
 
-## Time Complexity.
+## Time Complexity
 - Best, Average and Worst Case  is O(n<sup>2</sup>), where n is the size of the array. 
 - 
 

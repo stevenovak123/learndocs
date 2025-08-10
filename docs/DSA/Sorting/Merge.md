@@ -6,7 +6,7 @@ description: Merge Sort Logic and Code.
 ---
 Combination of merging and sorting. Works by decomposing array into smaller arrays of 0 or 1 elements, then building up a newly sorted array.
 
-## Pseudocode.
+## Pseudocode
 - In order to merge sort, implement a function responsible for merging two sorted arrays. 
     - This function should not modify the params passed to it.
 - This helper function, creates a new array, which is sorted and consists of all the elements in the two input arrays.
@@ -15,7 +15,7 @@ Combination of merging and sorting. Works by decomposing array into smaller arra
     - if the value of the first array is larger than the second array, push the second array value and move on to the next value in the second array.
 
 
-## Time Complexity.
+## Time Complexity
 - Best, Average and Worst Case is O(n log n).
 
 ```js title='Merge Sort'

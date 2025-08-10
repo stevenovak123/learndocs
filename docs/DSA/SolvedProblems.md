@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 14
 
 title: Solved problems
 description: Contains code and pseudocode for all DSA problems solved.
