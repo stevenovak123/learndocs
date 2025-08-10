@@ -41,7 +41,7 @@ BFS is searching across the tree on each level.
   - Dequeue a node from the queue and push the value of the node into the variable that stores the nodes
   - If there is a left property on the dequeued node - add it to the queue.
   - if there is a right property on the dequeued node - add it to the queue.
-- Return the variable taht is storing values.
+- Return the variable that is storing values.
 
 ### Depth First Search (DFS)
 
@@ -54,7 +54,7 @@ DFS is vertically going down and searching.
 
 ### Psuedocode PreOrder DFS.
 
-- Create a variable to store teh values of the node visited.
+- Create a variable to store the values of the node visited.
 - Store the root of the tree in a variable called current.
 - Write a helper function which accepts a node.
   - Push the value of the node to the variable that stores the values.
