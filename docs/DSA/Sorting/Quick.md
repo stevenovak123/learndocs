@@ -8,8 +8,7 @@ description: Quick Sort Logic and Code.
 Like merge sort, Works by decomposing array into smaller arrays of 0 or 1 elements. Works by selecting one element and finding the index where the pivot should end up in the sorted array. Once the pivot is in its correct position, quick sort can be applied on either side of the pivot.
 
 
-
-## Pseudocode.
+## Pseudocode
 -  In order to merge sort, implement a function responsible for arraging the array. 
     - This function should be able to arrange elements on either side of the array. It should not create a new array.
     - Consider the pivot the start of the array.
@@ -21,7 +20,7 @@ Like merge sort, Works by decomposing array into smaller arrays of 0 or 1 elemen
 - Call the helper function.
 - When helper returns the updated pivot index, recursively call the pivot helper on the subarray to the left of that index, and the subarray to the right of that index.
 
-## Time Complexity.
+## Time Complexity
 - Best and Average Case O(n log n).
 - Worst Case is O(n<sup>2</sup>).
 

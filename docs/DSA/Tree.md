@@ -16,7 +16,7 @@ Trees are nodes that are in a parent-child relationship.
 
 There are types of trees.
 
-## Binary Search Tree.
+## Binary Search Tree
 
 - Every parent node has at the most two children.
 - Every node to the left of the parent node is always less than the parent.
@@ -52,7 +52,7 @@ DFS is vertically going down and searching.
   - InOrder: Visit the left subtree, then current node, then right subtree.
   - PostOrder: Visit the left subtree, then right subtree, then current node.
 
-### Psuedocode PreOrder DFS.
+### Psuedocode PreOrder DFS
 
 - Create a variable to store the values of the node visited.
 - Store the root of the tree in a variable called current.
@@ -63,7 +63,7 @@ DFS is vertically going down and searching.
 - Invoke the helper function with the current variable.
 - Return the array of values.
 
-### Psuedocode PostOrder DFS.
+### Psuedocode PostOrder DFS
 
 - Create a variable to store the values of the node visited.
 - Store the root of the tree in a variable called current.
@@ -74,7 +74,7 @@ DFS is vertically going down and searching.
   - Invoke the helper function with the current variable.
 - Return the array of values.
 
-### Psuedocode InOrder DFS.
+### Psuedocode InOrder DFS
 
 - Create a variable to store the values of the node visited.
 - Store the root of the tree in a variable called current.

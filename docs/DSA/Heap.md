@@ -13,7 +13,7 @@ There are many types of heaps. Focusing more on binary heaps.
   - Min Binary Heap: Parent always smaller than child nodes.
   - Max Binary Heap: Parent always larger than child nodes.
 
-## Max Binary Heap.
+## Max Binary Heap
 
 - Each parent has at most two child nodes.
 - The value of each parent node is always greater than its child nodes.
