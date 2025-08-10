@@ -7,7 +7,7 @@ description: Binary Search, logic and code
 
 Binary search is a much faster form of search. Rather than eliminating one element at a time, we eliminate half of the remaining elements at once. **Works only on sorted arrays**
 
-## Pseudocode.
+## Pseudocode
 - Accept an array and the item to search.
 - initialize `start` (0) and `end` as `(array.length-1)`. Can be called left and right as well
 - While the `start is less than end AND middle is not the item.` 
@@ -19,7 +19,7 @@ Binary search is a much faster form of search. Rather than eliminating one eleme
     - If value is not find return -1.
 
 
-## Time Complexity.
+## Time Complexity
 - Best Case is O(1).
 - Average Case and Worst Case is O(log n), where n is the size of the array
 

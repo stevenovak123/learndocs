@@ -18,7 +18,7 @@ There are two types of linked lists.
 
 Singly linked means only keeps track of the next node where as doubly means keeps track of the previous node as well.
 
-## Properties of Linked lists.
+## Properties of Linked lists
 
 - push - Add a new node.
 - pop - Remove a node.
@@ -30,9 +30,9 @@ Singly linked means only keeps track of the next node where as doubly means keep
 - remove - remove a node from the linked list at a specific position.
 - reverse - reverse a linked list.
 
-## Code Implementation.
+## Code Implementation
 
-### Singly Linked List.
+### Singly Linked List
 
 ```js title='Singly Linked list'
 class Node {
@@ -169,7 +169,7 @@ class SinglyLinkedList {
 }
 ```
 
-### Doubly linked list.
+### Doubly linked list
 
 ```js title='Doubly Linked list'
 class Node {

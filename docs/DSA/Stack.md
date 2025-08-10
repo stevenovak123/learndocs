@@ -13,6 +13,14 @@ Last Element added to the stack is the first element to be removed.
 - Arrays can be used as a stack. provided LIFO is followed.
 - Linked lists can be used for stacks as only the order matters and other information like index etc that array provides are not needed.
 
+:::tip
+Queues follow the FIFO structure. First in First Out.
+:::
+
+
+## Implementation
+
+
 ```js title='Stack implementation'
 class Stack {
   constructor() {

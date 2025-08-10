@@ -7,7 +7,7 @@ description: Radix Sort Logic and Code.
 
 Radix sort is an integer sorting algorithm that works by sorting numbers digit by digit, starting from the least significant digit (LSD) or most significant digit (MSD). It does not compare the actual values of the numbers, but instead uses the digit positions to organize them. Larger numbers have more digits, which determines their order in the sorting process. This method is efficient for sorting large sets of integers. Assumption is Base 10 numbers.
 
-## Pseudocode.
+## Pseudocode
 
 - This sort requires multiple helper functions.
   - we need to implement a helper function to get digit and the place value of it.
@@ -21,7 +21,7 @@ Radix sort is an integer sorting algorithm that works by sorting numbers digit b
   - place each number in the corresponding bucket, based on the _k_ th digit.
 - replace the existing array with values in our bucket and return it.
 
-## Time Complexity.
+## Time Complexity
 - Best, Average and Worst Case is O(nk). k is the size/number of digits.
 
 ```js title='Radix Sort'

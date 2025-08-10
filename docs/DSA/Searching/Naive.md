@@ -7,7 +7,7 @@ description: Naive String Search, logic and code
 Naive string search is a simple search. The logic is try to match strings with each other by iterating the smaller string over the bigger.
 
 
-## Pseudocode.
+## Pseudocode
 - Loop over the longer string.
 - Loop over the shorter string.
 - if the characters dont match, break out of the inner loop.
@@ -16,7 +16,7 @@ Naive string search is a simple search. The logic is try to match strings with e
 - Return the count.
 
 
-## Time Complexity.
+## Time Complexity
 - Best Case is O(1) 
 - Average Case and Worst Case is O(N), where N is the size of the array
 
