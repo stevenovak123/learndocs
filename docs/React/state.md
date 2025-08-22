@@ -56,6 +56,32 @@ while building applications, new state should be created after answering a few p
 4. Should it re-render component? **if no, use refs**
 
 Questions like where to place the state can be answered using the below questions
+
 1. Is it only used by the current component?
 2. Will it be used by the Child component?
 3. Used by one or few sibling components?
+
+### Derived State
+
+State that is computed from an existing piece of state or from props. Below is an example of derived state.
+
+:::note
+if cart items and total price were given its individual state then that would be tough to maintain and would cause re-renders everytime it changes.
+:::
+
+```js live title='example of derived state'
+function App() {
+  const [cart, setCart] = useState([
+    { name: 'Js', price: 10 },
+    { name: 'Java', price: 15 },
+  ]);
+  const numItems = cart.length;
+  const totalPrice = cart.reduce((acc, current) => acc + current.price, 0);
+  return (
+    <>
+      <p>Number of items in cart {numItems}</p>
+      <p>Total Price {totalPrice}</p>
+    </>
+  );
+}
+```
