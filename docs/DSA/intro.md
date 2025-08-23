@@ -14,3 +14,5 @@ Things needed to know.
 For Searching Algorithms, Click [here](./Searching/Linear.md)
 
 For Sorting Algorithms, Click [here](./Sorting/BuiltIn.md)
+
+For Solved Problems, Click [here](./SolvedProblems.mdx)
