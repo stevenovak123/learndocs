@@ -34,9 +34,21 @@ Diffing is comparing elements of two different renders based on the position in 
 Diffing is based on 2 assumptions.
 
 1. Two elements of different types will produce different trees.
-     1. Same position , different element.
-     1. Same position, same element.
+   1. Same position , different element.
+   1. Same position, same element.
 1. Elements with a stable key prop stay the same across renders.
+
+### Key Props.
+
+- It is a prop that we use to tell the diffing algorithm that an element is unique.
+- When the key stays same across the renders, the element in the DOM is not changed.
+- If the key changes, element is destroyed and a new element is created.
+
+:::tip Use Case for key props.
+
+- Used for rendering and maintaining lists.
+- Used to reset state.
+  :::
 
 ## Rendering.
 
